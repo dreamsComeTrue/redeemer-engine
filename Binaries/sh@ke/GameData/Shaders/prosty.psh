@@ -1,0 +1,28 @@
+struct VS_OUTPUT
+{
+	float4 hposition : POSITION0;
+	float2 texcoord0 : TEXCOORD0;
+	float4 color0    : COLOR0;
+};
+
+struct PS_OUTPUT
+{
+	float4 diffuse: COLOR0;
+	float4 normal: COLOR1;
+	float4 position: COLOR2;
+};
+
+sampler testTexture;
+
+PS_OUTPUT ps_main( VS_OUTPUT IN )
+{
+	PS_OUTPUT OUT;
+
+	OUT.diffuse = tex2D( testTexture, IN.texcoord0 );
+	OUT.diffuse.a = 0.1;
+	OUT.normal = OUT.diffuse;
+	OUT.position = OUT.diffuse;
+
+	return OUT;
+}
+

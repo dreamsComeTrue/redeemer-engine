@@ -1,0 +1,44 @@
+/*	Redeemer Engine 2010 (C) Copyright by Dominik "squ@ll" Jasiñski.
+**	
+**	Diffuse Shader
+**		Shader used to blit render targets to backbuffer when there is no lights
+*/
+
+//------------------------------------------------------------------------------------------------------------------------
+
+bool UseTexture;
+
+sampler diffuseTexture : register(s0);
+sampler normalTexture : register(s1);
+
+//------------------------------------------------------------------------------------------------------------------------
+
+struct VS_OUTPUT
+{
+	float4 Position : POSITION0;
+	float2 TexCoord : TEXCOORD0;
+	float4 Color    : COLOR0;
+};
+
+//------------------------------------------------------------------------------------------------------------------------
+
+struct PS_OUTPUT
+{
+	float4 Diffuse: COLOR0;
+};
+
+//------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------
+
+PS_OUTPUT PS_Main (VS_OUTPUT IN)
+{
+	PS_OUTPUT OUT;
+
+	if (UseTexture)
+		OUT.Diffuse = tex2D (diffuseTexture, IN.texcoord0 );
+	else
+		OUT.Diffuse = IN.color0;
+
+	return OUT;
+}
+

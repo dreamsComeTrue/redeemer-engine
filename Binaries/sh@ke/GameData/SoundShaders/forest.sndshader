@@ -1,0 +1,22 @@
+# Name: Forest listener shader.
+# By: Lukas Heise
+# Date: 2006-06-01
+
+
+listener_environment
+{
+	environment = "FOREST"
+	environment_size = "38.0"
+	environment_diffusion = "0.3"
+	room = "-1000"
+	room_hf = "-33000"
+	room_rolloff_factor = "0.0"
+	air_absorption_hf = "-5.0"
+	reflections = "-2560"
+	reflections_delay = "0.162"
+	reverb = "-229"
+	reverb_delay = "0.088"
+	decay_time = "1.49"
+	decay_hf_ratio = "0.54"
+	flags = "DECAYTIMESCALE REFLECTIONSSCALE REFLECTIONSDELAYSCALE REVERBSCALE REVERBDELAYSCALE DECAYHFLIMIT"
+}

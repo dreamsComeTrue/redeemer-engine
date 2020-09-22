@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ALUT">
+      <UniqueIdentifier>{aa30497c-621b-4386-9fae-60f87c12762c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ALUT\Source Files">
+      <UniqueIdentifier>{a19f4f2a-7138-47d0-8174-2e167b132e0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ALUT\Header Files">
+      <UniqueIdentifier>{3eac08f5-3733-4bac-989e-65c2a0435770}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutBufferData.c">
+      <Filter>ALUT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutCodec.c">
+      <Filter>ALUT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutError.c">
+      <Filter>ALUT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutInit.c">
+      <Filter>ALUT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutInputStream.c">
+      <Filter>ALUT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutLoader.c">
+      <Filter>ALUT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutOutputStream.c">
+      <Filter>ALUT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutUtil.c">
+      <Filter>ALUT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutVersion.c">
+      <Filter>ALUT\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutWaveform.c">
+      <Filter>ALUT\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutInternal.h">
+      <Filter>ALUT\Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\include\AL\alut.h">
+      <Filter>ALUT\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

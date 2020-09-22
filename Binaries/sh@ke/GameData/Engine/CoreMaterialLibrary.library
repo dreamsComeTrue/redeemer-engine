@@ -1,0 +1,46 @@
+<MaterialLibrary>
+
+	<Material Name="DeferredMaterial">
+		<Technique Name="MainTechnique">
+			<Pass Name="MainPass">
+				<Texture Name="DiffuseTexture" Usage="RenderTarget" Format="a16b16g16r16f" Sampler="0"/>
+				<Texture Name="NormalTexture" Usage="RenderTarget" Format="a16b16g16r16f" Sampler="1"/>
+				<Texture Name="PositionTexture" Usage="RenderTarget" Format="a16b16g16r16f" Sampler="2"/>
+			</Pass>
+		</Technique>
+	</Material>
+
+	<Material Name="DiffuseMaterial">
+		<Technique Name="Main">
+			<Pass Name="MainPass">
+				<Texture Name="DiffuseTexture" Sampler="0"/>
+				<Texture Name="NormalTexture" Sampler="1"/>
+				<VertexShader Name="DiffuseVertexShader" FileName="GameData\\Shaders\\Diffuse.vsh" EntryPoint="VS_Main">
+					<Constant Name="WorldViewProj" UpdateFunction="WorldViewProjection"></Constant>
+				</VertexShader>
+				<PixelShader Name="DiffusePixelShader" FileName="GameData\\Shaders\\Diffuse.psh" EntryPoint="PS_Main">
+					<Constant Name="UseTexture"></Constant>
+				</PixelShader>
+
+			</Pass>
+		</Technique>
+	</Material>
+
+	<Material Name="LightPoint" Transparent="true" ZWrite="false" SourceBlend="2" DestinationBlend="2">
+		<Technique Name="Main">
+			<Pass Name="MainPass">
+				<Texture Name="DiffuseTexture" Sampler="0"/>
+				<Texture Name="PositionTexture" Sampler="1"/>
+				<Texture Name="NormalTexture" Sampler="2"/>
+				<VertexShader Name="lightVertexShader" FileName="GameData\\Shaders\\light_point.vsh" EntryPoint="vs_main">
+					<Constant Name="matWorldViewProj" UpdateFunction="WorldViewProjection"></Constant>
+					<Constant Name="matView" UpdateFunction="CameraView"></Constant>
+				</VertexShader>
+					<PixelShader Name="lightPixelShader" FileName="GameData\\Shaders\\light_point.psh" EntryPoint="ps_main">
+				</PixelShader>
+
+			</Pass>
+		</Technique>
+	</Material>
+
+</MaterialLibrary>

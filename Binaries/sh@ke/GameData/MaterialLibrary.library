@@ -1,0 +1,133 @@
+<MaterialLibrary>
+
+	<Material Name="DeferredMaterial">
+		<Technique Name="MainTechnique">
+			<Pass Name="main">
+				<Texture Name="DiffuseTexture" Usage="RenderTarget" Format="a16b16g16r16f" Sampler="0"/>
+				<Texture Name="NormalTexture" Usage="RenderTarget" Format="a16b16g16r16f" Sampler="1"/>
+				<Texture Name="PositionTexture" Usage="RenderTarget" Format="a16b16g16r16f" Sampler="2"/>
+			</Pass>
+		</Technique>
+	</Material>
+
+	<Material Name="SimpleMaterial" Transparent="true" SourceBlend="5" DestinationBlend="6" >
+		<Technique Name="main">
+			<Pass Name="main">
+				<Texture Name="usmiech" FileName="GameData\\Textures\\smile.jpg"></Texture>
+				<VertexShader Name="prostyVertexShader" FileName="GameData\\Shaders\\prosty.vsh" EntryPoint="vs_main">
+					<Constant Name="WorldViewProj" UpdateFunction="WorldViewProjection"></Constant>
+				</VertexShader>
+				<PixelShader Name="prostyPixelShader" FileName="GameData\\Shaders\\prosty.psh" EntryPoint="ps_main">
+				</PixelShader>
+			</Pass>
+		</Technique>
+	</Material>
+
+	<Material Name="PlaneMaterial" >
+		<Technique Name="main">
+			<Pass Name="main">
+				<Texture Name="sciana" FileName="GameData\\Textures\\wall.jpg" Sampler="0"></Texture>
+				<VertexShader Name="prostyVertexShader" FileName="GameData\\Shaders\\prosty.vsh" EntryPoint="vs_main">
+					<Constant Name="WorldViewProj" UpdateFunction="WorldViewProjection"></Constant>
+				</VertexShader>
+				<PixelShader Name="prostyPixelShader" FileName="GameData\\Shaders\\prosty.psh" EntryPoint="ps_main">
+				</PixelShader>
+			</Pass>
+		</Technique>
+	</Material>
+
+	<Material Name="SmileMaterial" Transparent="true" SourceBlend="5" DestinationBlend="6" ZWrite="false">
+		<Technique Name="main">
+			<Pass Name="main">
+				<Texture Name="smile" FileName="GameData\\Textures\\smile.jpg" Sampler="0"></Texture>
+				<VertexShader Name="guiVertexShader2" FileName="GameData\\Shaders\\GUI.vsh" EntryPoint="vs_main">
+					<Constant Name="WorldViewProj" UpdateFunction="WorldViewProjection"></Constant>
+				</VertexShader>
+				<PixelShader Name="guiShader" FileName="GameData\\Shaders\\GUI.psh" EntryPoint="ps_main">
+					<Constant Name="UseTexture"></Constant>
+				</PixelShader>
+			</Pass>
+		</Technique>
+	</Material>
+
+	<Material Name="FloorMaterial">
+		<Technique Name="main">
+			<Pass Name="main">
+				<Texture Name="podloga" FileName="GameData\\Textures\\podloga.jpg" Sampler="0" MinFilter="FILTER_ANISOTROPIC" MipFilter="FILTER_ANISOTROPIC" MagFilter="FILTER_ANISOTROPIC"></Texture>
+				<VertexShader Name="prostyVertexShader" FileName="GameData\\Shaders\\prosty.vsh" EntryPoint="vs_main">
+					<Constant Name="WorldViewProj" UpdateFunction="WorldViewProjection"></Constant>
+				</VertexShader>
+				<PixelShader Name="prostyPixelShader" FileName="GameData\\Shaders\\prosty.psh" EntryPoint="ps_main">
+				</PixelShader>
+			</Pass>
+		</Technique>
+	</Material>
+
+	<Material Name="GUIMaterial" ZWrite="false">
+		<Technique Name="FontTechnique">
+			<Pass Name="main">
+				<VertexShader Name="guiVertexShader" FileName="GameData\\Shaders\\GUI.vsh" EntryPoint="vs_main">
+					<Constant Name="WorldViewProj" UpdateFunction="WorldViewProjection"></Constant>
+				</VertexShader>
+				<PixelShader Name="guiPixelShader" FileName="GameData\\Shaders\\FontShader.psh" EntryPoint="ps_main">
+					<Constant Name="BackGroundColor"></Constant>
+				</PixelShader>
+
+			</Pass>
+		</Technique>
+	</Material>
+
+	<Material Name="DiffuseMaterial">
+		<Technique Name="Main">
+			<Pass Name="diffusePass">
+				<Texture Name="DiffuseTexture" Sampler="0"/>
+				<Texture Name="NormalTexture" Sampler="1"/>
+				<VertexShader Name="diffuseVertexShader3" FileName="GameData\\Shaders\\Diffuse.vsh" EntryPoint="vs_main">
+					<Constant Name="WorldViewProj" UpdateFunction="WorldViewProjection"></Constant>
+				</VertexShader>
+				<PixelShader Name="diffusePixelShader3" FileName="GameData\\Shaders\\Diffuse.psh" EntryPoint="ps_main">
+					<Constant Name="UseTexture"></Constant>
+				</PixelShader>
+
+			</Pass>
+		</Technique>
+	</Material>
+
+	<Material Name="LightPoint" Transparent="true" ZWrite="false" SourceBlend="2" DestinationBlend="2">
+		<Technique Name="Main">
+			<Pass Name="diffusePass">
+				<Texture Name="DiffuseTexture" Sampler="0"/>
+				<Texture Name="PositionTexture" Sampler="1"/>
+				<Texture Name="NormalTexture" Sampler="2"/>
+				<VertexShader Name="lightVertexShader" FileName="GameData\\Shaders\\light_point.vsh" EntryPoint="vs_main">
+					<Constant Name="matWorldViewProj" UpdateFunction="WorldViewProjection"></Constant>
+					<Constant Name="matView" UpdateFunction="CameraView"></Constant>
+				</VertexShader>
+					<PixelShader Name="lightPixelShader" FileName="GameData\\Shaders\\light_point.psh" EntryPoint="ps_main">
+				</PixelShader>
+
+			</Pass>
+		</Technique>
+	</Material>
+
+	<Material Name="SkyBoxMaterial">
+		<Technique Name="MainTechnique">
+			<Pass Name="main">	
+				<Texture Name="teren1" FileName="GameData\\Textures\\SkyBoxes\\BlueDream\\bluedream_up.tga" Sampler="0"></Texture>			
+				<Texture Name="teren2" FileName="GameData\\Textures\\SkyBoxes\\BlueDream\\bluedream_dn.tga" Sampler="1"></Texture>			
+				<Texture Name="teren3" FileName="GameData\\Textures\\SkyBoxes\\BlueDream\\bluedream_ft.tga" Sampler="2"></Texture>			
+				<Texture Name="teren4" FileName="GameData\\Textures\\SkyBoxes\\BlueDream\\bluedream_bk.tga" Sampler="3"></Texture>			
+				<Texture Name="teren5" FileName="GameData\\Textures\\SkyBoxes\\BlueDream\\bluedream_rt.tga" Sampler="4"></Texture>			
+				<Texture Name="teren6" FileName="GameData\\Textures\\SkyBoxes\\BlueDream\\bluedream_lf.tga" Sampler="5"></Texture>			
+				<VertexShader Name="skyBoxVertexShader" FileName="GameData\\Shaders\\SkyBox.vsh" EntryPoint="vs_main">
+					<Constant Name="WorldViewProj" UpdateFunction="WorldViewProjection"></Constant>
+				</VertexShader>
+				<PixelShader Name="skyBoxPixelShader" FileName="GameData\\Shaders\\SkyBox.psh" EntryPoint="ps_main">
+					<Constant Name="TextureIndex"></Constant>
+				</PixelShader>
+
+			</Pass>
+		</Technique>
+	</Material>
+
+</MaterialLibrary>

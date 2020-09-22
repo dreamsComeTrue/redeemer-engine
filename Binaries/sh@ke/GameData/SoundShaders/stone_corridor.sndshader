@@ -1,0 +1,22 @@
+# Name: Stone corridor listener shader.
+# By: Lukas Heise
+# Date: 2006-06-01
+
+
+listener_environment
+{
+	environment = "STONECORRIDOR"
+	environment_size = "13.5"
+	environment_diffusion = "1.0"
+	room = "-1000"
+	room_hf = "-237"
+	room_rolloff_factor = "0.0"
+	air_absorption_hf = "-5.0"
+	reflections = "-1214"
+	reflections_delay = "0.013"
+	reverb = "395"
+	reverb_delay = "0.02"
+	decay_time = "2.7"
+	decay_hf_ratio = "0.79"
+	flags = "DECAYTIMESCALE REFLECTIONSSCALE REFLECTIONSDELAYSCALE REVERBSCALE REVERBDELAYSCALE DECAYHFLIMIT"
+}

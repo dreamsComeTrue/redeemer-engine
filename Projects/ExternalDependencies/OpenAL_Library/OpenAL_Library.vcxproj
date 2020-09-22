@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4CBC099C-24D5-4B7E-971C-F03D13BC2CD5}</ProjectGuid>
+    <RootNamespace>OpenAL_Library</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\Binaries\RedeemerEngine\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Out\ExternalDependencies\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\Binaries\RedeemerEngine\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Out\ExternalDependencies\$(ProjectName)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\win\;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\win\OpenAL32\Include\;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\alut\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_OPENAL32LIB;ALUT_BUILD_LIBRARY;HAVE__STAT;HAVE___INT8;HAVE_SLEEP;HAVE_WINDOWS_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <AdditionalDependencies>$(SolutionDir)..\SourceCode\ExternalDependencies\EAX 2.0 Extensions SDK\Libs\eaxguid.lib;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\libs\Win32\OpenAL32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\win\;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\win\OpenAL32\Include\;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\alut\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_OPENAL32LIB;ALUT_BUILD_LIBRARY;HAVE__STAT;HAVE___INT8;HAVE_SLEEP;HAVE_WINDOWS_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalDependencies>$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\libs\Win32\OpenAL32.lib;$(SolutionDir)..\SourceCode\ExternalDependencies\EAX 2.0 Extensions SDK\Libs\eaxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutBufferData.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutCodec.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutError.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutInit.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutInputStream.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutLoader.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutOutputStream.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutUtil.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutVersion.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutWaveform.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\src\alutInternal.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\OpenAL_Library\alut\include\AL\alut.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,22 @@
+# Name: Concert hall listener shader.
+# By: Lukas Heise
+# Date: 2006-06-01
+
+
+listener_environment
+{
+	environment = "CONCERTHALL"
+	environment_size = "19.6"
+	environment_diffusion = "1.0"
+	room = "-1000"
+	room_hf = "-500"
+	room_rolloff_factor = "0.0"
+	air_absorption_hf = "-5.0"
+	reflections = "-1230"
+	reflections_delay = "0.02"
+	reverb = "-2"
+	reverb_delay = "0.029"
+	decay_time = "3.92"
+	decay_hf_ratio = "0.7"
+	flags = "DECAYTIMESCALE REFLECTIONSSCALE REFLECTIONSDELAYSCALE REVERBSCALE REVERBDELAYSCALE DECAYHFLIMIT"
+}

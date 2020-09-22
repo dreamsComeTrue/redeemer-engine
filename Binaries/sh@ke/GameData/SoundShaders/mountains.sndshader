@@ -1,0 +1,22 @@
+# Name: Mountains listener shader.
+# By: Lukas Heise
+# Date: 2006-06-01
+
+
+listener_environment
+{
+	environment = "MOUNTAINS"
+	environment_size = "100.0"
+	environment_diffusion = "0.27"
+	room = "-1000"
+	room_hf = "-2500"
+	room_rolloff_factor = "0.0"
+	air_absorption_hf = "-5.0"
+	reflections = "-2780"
+	reflections_delay = "0.3"
+	reverb = "-1434"
+	reverb_delay = "0.1"
+	decay_time = "1.49"
+	decay_hf_ratio = "0.21"
+	flags = "DECAYTIMESCALE REFLECTIONSSCALE REFLECTIONSDELAYSCALE REVERBSCALE REVERBDELAYSCALE DECAYHFLIMIT"
+}

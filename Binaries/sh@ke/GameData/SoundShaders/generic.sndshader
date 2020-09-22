@@ -1,0 +1,21 @@
+# Name: Generic listener shader.
+# By: Lukas Heise
+# Date: 2006-06-01
+
+listener_environment
+{
+	environment = "GENERIC"
+	environment_size = "7.5"
+	environment_diffusion = "1.0"
+	room = "-1000"
+	room_hf = "-100"
+	room_rolloff_factor = "0.0"
+	air_absorption_hf = "-5.0"
+	reflections = "-2602"
+	reflections_delay = "0.007"
+	reverb = "200"
+	reverb_delay = "0.011"
+	decay_time = "1.49"
+	decay_hf_ratio = "0.83"
+	flags = "DECAYTIMESCALE REFLECTIONSSCALE REFLECTIONSDELAYSCALE REVERBSCALE REVERBDELAYSCALE DECAYHFLIMIT"
+}

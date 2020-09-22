@@ -1,0 +1,12 @@
+<GUISkin Name="GuiSkinSimple" Material="SmileMaterial">
+
+	<Control Type="StaticText">
+	  <Part Name="GlyphImage">
+		  <State Name="Normal" Offset="230 140 290 200"/>
+  		<State Name="Disabled" Offset="200 220 220 240"/>
+	   	<State Name="Highlighted" Offset="20 30 50 50"/>
+	 	  <State Name="Pushed" Offset="70 90 100 120"/>
+	 	</Part>
+	</Control>
+	
+</GUISkin>

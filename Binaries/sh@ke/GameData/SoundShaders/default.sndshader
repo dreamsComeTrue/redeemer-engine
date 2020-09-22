@@ -1,0 +1,9 @@
+# Name: Default listener shader.
+# By: Lukas Heise
+# Date: 2006-06-01
+
+listener_environment
+{
+	# the default listener is set to Generic
+	# no code is needed for the default listener
+}

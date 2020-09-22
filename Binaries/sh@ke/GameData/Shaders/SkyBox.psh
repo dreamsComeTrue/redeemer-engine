@@ -1,0 +1,68 @@
+/*	SkyBox Shader
+**	
+**	Redeemer Engine 2010 (C) Copyright by Dominik "squ@ll" Jasiñski.
+*/
+
+//------------------------------------------------------------------------------------------------------------------------
+
+uint TextureIndex;
+
+sampler skyTexture1 : register(s0);
+sampler skyTexture2 : register(s1);
+sampler skyTexture3 : register(s2);
+sampler skyTexture4 : register(s3);
+sampler skyTexture5 : register(s4);
+sampler skyTexture6 : register(s5);
+
+//------------------------------------------------------------------------------------------------------------------------
+
+struct VS_OUTPUT
+{
+	float4 Position : POSITION;	
+	float4 Normal   : NORMAL;
+	float2 TexCoord : TEXCOORD0;
+	float4 Color    : COLOR0;
+};
+
+//------------------------------------------------------------------------------------------------------------------------
+
+struct PS_OUTPUT
+{
+	float4 Color : COLOR;
+};
+
+//------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------
+
+PS_OUTPUT ps_main (VS_OUTPUT IN)
+{
+	PS_OUTPUT OUT;
+
+	float4 outputColor = float4 (0, 0, 0, 0);
+
+	switch (TextureIndex)
+	{
+		case 0:
+			outputColor = tex2D (skyTexture1, IN.TexCoord);
+			break;
+		case 1:
+			outputColor = tex2D (skyTexture2, IN.TexCoord);
+			break;
+		case 2:
+			outputColor = tex2D (skyTexture3, IN.TexCoord);
+			break;
+		case 3:
+			outputColor = tex2D (skyTexture4, IN.TexCoord);
+			break;
+		case 4:
+			outputColor = tex2D (skyTexture5, IN.TexCoord);
+			break;
+		case 5:
+			outputColor = tex2D (skyTexture6, IN.TexCoord);
+			break;
+	}
+
+	OUT.Color = outputColor;
+
+	return OUT;
+}

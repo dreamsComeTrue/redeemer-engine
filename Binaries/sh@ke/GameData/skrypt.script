@@ -1,0 +1,44 @@
+/*!
+**	Redeemer Engine 2010 (C) Copyright by Dominik "squ@ll" Jasiñski.
+**
+**	skrypt.script	
+**		First shake script
+*/
+
+class C_GameStartup
+{
+	void Hello (uint16 howMany)
+	{
+		m_HowMany = howMany;
+
+		//	Pêtla wyœwietlaj¹ca 1 raz komunikat
+		for (int i = 0; i < m_HowMany; i ++)
+		{
+			if ((i % 2) == 0)
+			{
+				string s = "Witaj w \"sh@ke\"\n\nPierwszy fajny skrypt\n :D NUMER: ";
+				s += i;
+				print (s);
+			}
+		}
+	}
+
+	//	Private data
+	uint16 m_HowMany;
+}
+
+void MainFunction ()
+{
+	C_GameStartup object;
+	C_GameStartup@ handle = @object;
+
+	handle.Hello (4);
+}
+
+/*
+**	Funkcja g³ówna programu
+*/
+void main()
+{
+	MainFunction ();
+}

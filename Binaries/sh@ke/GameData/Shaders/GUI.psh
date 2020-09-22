@@ -1,0 +1,29 @@
+bool UseTexture = false;
+
+struct VS_OUTPUT
+{
+	float4 hposition : POSITION0;
+	float2 texcoord0 : TEXCOORD0;
+	float4 color0    : COLOR0;
+};
+
+struct PS_OUTPUT
+{
+	float4 diffuse: COLOR0;
+};
+
+sampler testTexture;
+
+PS_OUTPUT ps_main( VS_OUTPUT IN )
+{
+	PS_OUTPUT OUT;
+
+	if (UseTexture)
+		OUT.diffuse = tex2D( testTexture, IN.texcoord0 );
+	else
+		OUT.diffuse = IN.color0;
+	
+	return OUT;
+}
+
+

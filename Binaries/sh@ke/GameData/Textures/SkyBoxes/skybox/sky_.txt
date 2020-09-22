@@ -1,0 +1,6 @@
+front	"engine/dev/skybox/front.png"
+left	"engine/dev/skybox/left.png"
+right	"engine/dev/skybox/right.png"
+back	"engine/dev/skybox/back.png"
+bottom	"engine/dev/skybox/bottom.png"
+top	"engine/dev/skybox/top.png"

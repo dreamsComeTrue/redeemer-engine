@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4E7DF6D8-FDFD-4266-AF77-E36C4C2B1BEE}</ProjectGuid>
+    <RootNamespace>RedeemerEngine</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\Binaries\RedeemerEngine\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\Out\RedeemerEngine\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\Binaries\RedeemerEngine\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\Out\RedeemerEngine\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\SourceCode\ExternalDependencies\ZLib_Library\;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\win\;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\win\OpenAL32\Include\;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\alut\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\OggFile_Library\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\VorbisFile_Library\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\EAX 2.0 Extensions SDK\Include\;$(SolutionDir)..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\;$(SolutionDir)..\SourceCode\ExternalDependencies\PhysX_Library\Cooking\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\PhysX_Library\Foundation\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\PhysX_Library\NxCharacter\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\PhysX_Library\Physics\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\PhysX_Library\PhysXLoader\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\FreeType_Library\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\FastDelegate_Library\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9d.lib;dinput8.lib;dxguid.lib;wsock32.lib;NxCharacterCHECKED.lib;PhysXCookingCHECKED.lib;PhysXCore.lib;PhysXLoaderCHECKED.lib;AngelScript_Library_$(Configuration).lib;ZLib_Library_$(Configuration).lib;OpenAL_Library_$(Configuration).lib;FreeType_Library_$(Configuration).lib;OggFile_Library_$(Configuration).lib;VorbisFile_Library_$(Configuration).lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).lib</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Binaries\RedeemerEngine\;$(SolutionDir)..\SourceCode\ExternalDependencies\PhysX_Library\lib\Win32\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>E:\Programowanie\Games\Libraries\Microsoft DirectX SDK %28June 2010%29\Include;$(SolutionDir)..\SourceCode\ExternalDependencies\ZLib_Library\;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\win\;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\win\OpenAL32\Include\;$(SolutionDir)..\SourceCode\ExternalDependencies\OpenAL_Library\alut\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\OggFile_Library\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\VorbisFile_Library\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\EAX 2.0 Extensions SDK\Include\;$(SolutionDir)..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\;$(SolutionDir)..\SourceCode\ExternalDependencies\PhysX_Library\Cooking\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\PhysX_Library\Foundation\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\PhysX_Library\NxCharacter\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\PhysX_Library\Physics\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\PhysX_Library\PhysXLoader\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\FreeType_Library\include\;$(SolutionDir)..\SourceCode\ExternalDependencies\FastDelegate_Library\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <Lib>
+      <AdditionalDependencies>winmm.lib;d3d9.lib;d3dx9.lib;dinput8.lib;dxguid.lib;wsock32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).lib</OutputFile>
+      <AdditionalLibraryDirectories>E:\Programowanie\Games\Libraries\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(SolutionDir)..\Binaries\RedeemerEngine\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_BaseClass.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Cipher.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Convert.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Exception.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Mutex.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Random.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Singleton.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_SmartPointer.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_System.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_SystemInfo.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Thread.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Timer.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Utility.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_UUID.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_VideoMode.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Window.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_AABBox3D.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_MathUtils.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_Matrix.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_Plane3D.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_Quaternion.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_Rectangle.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_Vector2D.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_Vector3D.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_Vector4D.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_CompressFile.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_DataFile.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_FileManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_FileSystemManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_Logger.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_MemoryFile.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_PackFile.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_PhysicalFileANSI.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_PhysicalFileUNICODE.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_XMLDocument.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Physics\R_Physics_WorldSceneManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Script\R_Script_Script.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Script\R_Script_ScriptManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_AudioManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_AudioSound.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_AudioStream.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_EAX2System.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundBuffer.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFile.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundSource.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFormat.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFormatOGG.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFormatWAV.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXForceFeedback.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXJoyStick.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXKeyboard.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXMouse.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_ForceFeedback.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_ForceFeedbackEffect.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_InputDevice.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_InputEventHandler.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_InputManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_InputSystem.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_JoyStick.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_Keyboard.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_Mouse.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\RedeemerEngine.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\RedeemerEngineDefines.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_FTPClient.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_HTTPClient.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_IPAddress.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_NetworkManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_Packet.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_Socket.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_TCPListener.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_TCPSocket.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_UDPSocket.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9IndexBuffer.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9Material.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9RenderDevice.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9RenderDeviceFactory.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9Shader.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9Texture.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9TextureSampler.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9VertexBuffer.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9VertexFormat.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_GeometryStage.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_GUIStage.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_LightStage.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_PostProcessStage.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderPipeline.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderStage.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_Color.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_IndexBuffer.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_Material.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderDevice.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderDeviceFactory.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderEntity.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderPass.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderQueue.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderTechnique.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_Shader.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_ShaderEntity.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_ShaderVariable.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_Sprite.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_Texture.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_TextureSampler.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_VertexBuffer.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_VertexFormat.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_MaterialLibrary.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_MaterialManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_ShaderManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_TextureManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_VertexBufferManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_BoxSceneNode.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_Camera3DSceneNode.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_CameraSceneNode.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_Frustum.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_LightSceneNode.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_PlaneSceneNode.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SceneManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SceneNode.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SceneNodeEntity.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SkyBoxSceneNode.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SkySceneNode.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_WorldSceneManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIButton.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUICheckBox.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIControl.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIEventHandler.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIFont.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIFontManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIImage.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIPanel.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUISkin.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUISkinManager.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIStaticText.h" />
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUISystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_BaseClass.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Cipher.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Convert.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Exception.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Mutex.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Singleton.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_System.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_SystemInfo.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Thread.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Timer.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Utility.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_UUID.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_VideoMode.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Window.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_MathUtils.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_CompressFile.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_DataFile.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_FileManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_FileSystemManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_Logger.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_MemoryFile.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_PackFile.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_PhysicalFileANSI.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_PhysicalFileUNICODE.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_XMLDocument.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Physics\R_Physics_WorldSceneManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Script\R_Script_Script.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Script\R_Script_ScriptManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_AudioManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_AudioSound.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_AudioStream.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_EAX2System.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundBuffer.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFile.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundSource.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFormat.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFormatOGG.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFormatWAV.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXForceFeedback.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXJoyStick.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXKeyboard.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXMouse.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_ForceFeedback.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_ForceFeedbackEffect.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_InputDevice.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_InputManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_InputSystem.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_JoyStick.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_Keyboard.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_Mouse.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\RedeemerEngine.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_FTPClient.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_HTTPClient.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_IPAddress.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_NetworkManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_Packet.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_Socket.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_TCPListener.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_TCPSocket.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_UDPSocket.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9IndexBuffer.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9Material.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9RenderDevice.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9RenderDeviceFactory.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9Shader.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9Texture.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9TextureSampler.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9VertexBuffer.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9VertexFormat.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_GeometryStage.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_GUIStage.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_LightStage.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_PostProcessStage.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderPipeline.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderStage.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_Color.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_IndexBuffer.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_Material.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderDevice.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderDeviceFactory.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderEntity.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderPass.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderQueue.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderTechnique.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_Shader.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_ShaderEntity.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_ShaderVariable.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_Sprite.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_Texture.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_TextureSampler.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_VertexBuffer.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_VertexFormat.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_MaterialLibrary.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_MaterialManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_ShaderManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_TextureManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_VertexBufferManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_BoxSceneNode.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_Camera3DSceneNode.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_CameraSceneNode.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_Frustum.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_LightSceneNode.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_PlaneSceneNode.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SceneManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SceneNode.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SceneNodeEntity.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SkyBoxSceneNode.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SkySceneNode.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_WorldSceneManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIButton.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUICheckBox.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIControl.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIEventHandler.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIFont.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIFontManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIImage.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIPanel.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUISkin.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUISkinManager.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIStaticText.cpp" />
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUISystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ExternalDependencies\AngelScript_Library\AngelScript_Library.vcxproj">
+      <Project>{4f25dd39-3097-4e76-85ec-d061791fe589}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ExternalDependencies\OggFile_Library\OggFile_Library.vcxproj">
+      <Project>{e0f642bf-238a-461d-8fac-7615b7bbcb78}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ExternalDependencies\OpenAL_Library\OpenAL_Library.vcxproj">
+      <Project>{4cbc099c-24d5-4b7e-971c-f03d13bc2cd5}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ExternalDependencies\VorbisFile_Library\VorbisFile_Library.vcxproj">
+      <Project>{c7033551-ca81-4d9f-8463-af65b6389b7f}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\ExternalDependencies\ZLib_Library\ZLib_Library.vcxproj">
+      <Project>{596a61ba-719a-47c9-8838-ce7dd89f8eb8}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

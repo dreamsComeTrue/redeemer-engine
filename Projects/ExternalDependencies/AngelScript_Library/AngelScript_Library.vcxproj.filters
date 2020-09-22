@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Add-Ons">
+      <UniqueIdentifier>{a6d48310-832b-43cc-b526-2c034a3aab92}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\contextmgr">
+      <UniqueIdentifier>{9aa66b14-1cbd-4478-b1d2-a35f9bcc8262}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\contextmgr\Header Files">
+      <UniqueIdentifier>{4bbc37f5-1bfa-4b69-a2f2-eda838c06ef7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\contextmgr\Source Files">
+      <UniqueIdentifier>{656dd76d-d148-4373-b72a-db2e4c401141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptany">
+      <UniqueIdentifier>{1e341eb2-03f9-4e3c-9f08-7bbfecc61d77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptany\Source Files">
+      <UniqueIdentifier>{982367e5-73cc-4be8-acda-029355ee8969}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptany\Header Files">
+      <UniqueIdentifier>{f6d2066c-983f-432c-9f95-9f00cd738c7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptarray">
+      <UniqueIdentifier>{db386234-3b37-49f8-94b6-18da8285c76c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptarray\Source Files">
+      <UniqueIdentifier>{7d13ea6c-05d8-40d1-bafb-4bbb523191e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptarray\Header Files">
+      <UniqueIdentifier>{781d0fa6-d69f-4d1e-b8dd-294380ba1784}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptbuilder">
+      <UniqueIdentifier>{15559b10-fe45-4c48-a3d3-dbab55546bc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptbuilder\Source Files">
+      <UniqueIdentifier>{f64ff385-eac3-4208-bac6-74831597dee2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptbuilder\Header Files">
+      <UniqueIdentifier>{3c2a1da4-88fb-4842-9ea3-091ea37fd5bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptdictionary">
+      <UniqueIdentifier>{c6c725c8-b78d-4b04-9e2a-df7fd85516f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptdictionary\Source Files">
+      <UniqueIdentifier>{ea5a9cd7-6c12-448a-83ef-a35464ea8093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptdictionary\Header Files">
+      <UniqueIdentifier>{61f67cb6-325e-4a65-8e1b-d6404000285a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptfile">
+      <UniqueIdentifier>{0143149f-975c-48e1-a957-a98556720ac2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptfile\Source Files">
+      <UniqueIdentifier>{929b67d1-ac10-4c68-9d4f-4f71b95f8ec8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptfile\Header Files">
+      <UniqueIdentifier>{993e9041-15bb-4ad5-be16-b5a8deaae3e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scripthelpher">
+      <UniqueIdentifier>{b7c3e01f-7982-4121-90ad-43edd79fdf8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scripthelpher\Source Files">
+      <UniqueIdentifier>{439a2923-7161-4ee1-ad66-c8ad04e0f189}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scripthelpher\Header Files">
+      <UniqueIdentifier>{4bd3f0f0-3438-4eb4-a684-93e89796efc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptmath">
+      <UniqueIdentifier>{24841ff1-cc8a-4ec4-a512-778f120af6c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptmath\Source Files">
+      <UniqueIdentifier>{f0b4a352-2bfd-4d5f-a1b7-9c1b4e2c1e0d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptmath\Header Files">
+      <UniqueIdentifier>{fc645160-845f-419f-a498-57ee82623584}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptmath3d">
+      <UniqueIdentifier>{f9bc9f3d-0471-4858-8254-db4e529a46c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptmath3d\Source Files">
+      <UniqueIdentifier>{6f6c4e68-e68c-4ad8-be96-94e17bef8103}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptmath3d\Header Files">
+      <UniqueIdentifier>{4d11c89c-8715-4160-b8ef-6e15c1b7adca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptstdstring">
+      <UniqueIdentifier>{0357c74f-3431-4e08-9371-3a4fcbefb932}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptstdstring\Source Files">
+      <UniqueIdentifier>{2a4238d2-c48a-40da-86ba-034d4e05a037}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptstdstring\Header Files">
+      <UniqueIdentifier>{2bc78cc7-4969-47bc-bb02-9ab7a01c4569}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptstring">
+      <UniqueIdentifier>{1d32f455-ebcf-4e33-be0b-87918cb7b43e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptstring\Source Files">
+      <UniqueIdentifier>{05b1a832-6e0d-49a7-9e32-6a4fa183cf3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Add-Ons\scriptstring\Header Files">
+      <UniqueIdentifier>{06ab57b3-016c-49c7-b227-7d6d9b60b603}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_arrayobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_atomic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_builder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_bytecode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_callfunc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_callfunc_x86.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_compiler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_configgroup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_context.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_datatype.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_gc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_generic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_globalproperty.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_memory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_module.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_objecttype.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_outputbuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_restore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptcode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptengine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptfunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptnode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptobject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_string.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_string_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_tokenizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_typeinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_variablescope.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\contextmgr\contextmgr.cpp">
+      <Filter>Add-Ons\contextmgr\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptany\scriptany.cpp">
+      <Filter>Add-Ons\scriptany\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptarray\scriptarray.cpp">
+      <Filter>Add-Ons\scriptarray\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptbuilder\scriptbuilder.cpp">
+      <Filter>Add-Ons\scriptbuilder\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptdictionary\scriptdictionary.cpp">
+      <Filter>Add-Ons\scriptdictionary\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptfile\scriptfile.cpp">
+      <Filter>Add-Ons\scriptfile\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scripthelper\scripthelper.cpp">
+      <Filter>Add-Ons\scripthelpher\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptmath\scriptmath.cpp">
+      <Filter>Add-Ons\scriptmath\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptmath3d\scriptmath3d.cpp">
+      <Filter>Add-Ons\scriptmath3d\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptstdstring\scriptstdstring.cpp">
+      <Filter>Add-Ons\scriptstdstring\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptstring\scriptstring.cpp">
+      <Filter>Add-Ons\scriptstring\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptstring\scriptstring_utils.cpp">
+      <Filter>Add-Ons\scriptstring\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\include\angelscript.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_arrayobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_atomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_builder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_bytecode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_callfunc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_compiler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_configgroup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_context.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_criticalsection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_datatype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_debug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_gc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_generic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_map.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_module.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_objecttype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_outputbuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_property.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_restore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptcode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptengine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptfunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptnode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptobject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_string.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_string_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_texts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_tokendef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_tokenizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_typeinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_variablescope.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\contextmgr\contextmgr.h">
+      <Filter>Add-Ons\contextmgr\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptany\scriptany.h">
+      <Filter>Add-Ons\scriptany\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptarray\scriptarray.h">
+      <Filter>Add-Ons\scriptarray\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptbuilder\scriptbuilder.h">
+      <Filter>Add-Ons\scriptbuilder\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptdictionary\scriptdictionary.h">
+      <Filter>Add-Ons\scriptdictionary\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptfile\scriptfile.h">
+      <Filter>Add-Ons\scriptfile\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scripthelper\scripthelper.h">
+      <Filter>Add-Ons\scripthelpher\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptmath\scriptmath.h">
+      <Filter>Add-Ons\scriptmath\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptmath3d\scriptmath3d.h">
+      <Filter>Add-Ons\scriptmath3d\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptstdstring\scriptstdstring.h">
+      <Filter>Add-Ons\scriptstdstring\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptstring\scriptstring.h">
+      <Filter>Add-Ons\scriptstring\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

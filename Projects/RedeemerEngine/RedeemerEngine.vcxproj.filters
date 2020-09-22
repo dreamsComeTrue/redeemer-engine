@@ -1,0 +1,932 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{cb6d4224-f7d1-48b0-8d02-03a030b7dba9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Core\Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Core\_Math">
+      <UniqueIdentifier>{44503c05-d454-4914-9fe3-8a29222df22b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\_Math\Source Files">
+      <UniqueIdentifier>{b17f6ca4-fcbb-4578-992e-9d33c6e52fb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\_Math\Header Files">
+      <UniqueIdentifier>{35ba020c-40a8-42e9-b920-f67d964ffbab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileSystem">
+      <UniqueIdentifier>{98070d9a-016c-4743-b08d-3f5499126514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileSystem\Source Files">
+      <UniqueIdentifier>{e1838d23-1326-4991-bf12-d941b72befa9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FileSystem\Header Files">
+      <UniqueIdentifier>{c01039ed-84f1-41c8-abda-9689a3423f4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script">
+      <UniqueIdentifier>{bd2573f9-8cf5-4fc7-b9c9-dbe3d48779f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Source Files">
+      <UniqueIdentifier>{d993dd44-cd35-4e23-8586-d8d8982d76d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Script\Header Files">
+      <UniqueIdentifier>{7973ac6d-d34c-447a-85db-d6b60cfa5add}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{f7eda479-d8a0-44a2-9df5-02eb8d7ff7a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\Source Files">
+      <UniqueIdentifier>{e2f27a4d-93b3-45dd-a8d9-ac4ec24ca9a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\Header Files">
+      <UniqueIdentifier>{cfda338e-234e-4148-b428-16450ec7b6e3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\SoundFormats">
+      <UniqueIdentifier>{58e47f3c-950f-4d9a-8350-1cdce564ad55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\SoundFormats\Source Files">
+      <UniqueIdentifier>{b385bc73-841a-4c20-a9e4-ff707daad542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio\SoundFormats\Header Files">
+      <UniqueIdentifier>{aa4a7a6e-8af3-458a-a6b8-d0ae4738d4ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{876b4883-dd1c-463d-81dd-d0f44ea3439e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Source Files">
+      <UniqueIdentifier>{b194efef-f911-4594-96a3-21bcb4bad63d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input\Header Files">
+      <UniqueIdentifier>{13f0be9c-2d15-4e98-a4c0-5122bc60db9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine">
+      <UniqueIdentifier>{c8a93831-599a-4158-b00c-5f4e1d4b0799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Source Files">
+      <UniqueIdentifier>{ce5ec31c-e36e-4bd2-bfe0-7b37f65a08db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\Header Files">
+      <UniqueIdentifier>{9205cf5c-7cb7-48b8-87d9-18ac7d6e752b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network">
+      <UniqueIdentifier>{b9fb8b94-8e3f-4009-bba2-763f553cb2b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Source Files">
+      <UniqueIdentifier>{d81ec9f4-58c7-4b7d-80a7-41563d42bdac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Network\Header Files">
+      <UniqueIdentifier>{1cb893f6-876e-44d6-a320-db54b59aeefb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{e9e69523-879a-4b72-87f8-7c325f79e394}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\DirectX9Renderer">
+      <UniqueIdentifier>{87ca7dda-bd82-4f51-9ec0-31068227bb43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\DirectX9Renderer\Source Files">
+      <UniqueIdentifier>{bd8089cb-92a2-4d95-a943-58f4f3a40685}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\DirectX9Renderer\Header Files">
+      <UniqueIdentifier>{6c1573d9-c715-4c96-a28b-1902a49ce445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\RenderPipeline">
+      <UniqueIdentifier>{dd7d9f4f-bc04-4398-a5d6-711da2b499aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\RenderPipeline\Source Files">
+      <UniqueIdentifier>{97de784e-e1d7-4332-90a3-c23a897409ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\RenderPipeline\Header Files">
+      <UniqueIdentifier>{182c70da-a253-480e-a959-c06192cf59ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\RenderDevice">
+      <UniqueIdentifier>{65093ec2-bc1d-4864-9048-154639058918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\RenderDevice\Header Files">
+      <UniqueIdentifier>{7b1c3c9c-31b9-45d1-9479-2a069a969dc1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\RenderDevice\Source Files">
+      <UniqueIdentifier>{dc9239be-5495-447d-a272-0c4c6903ec19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\Managers">
+      <UniqueIdentifier>{16672169-e1cf-4bbf-84f5-744e97c9333f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\Managers\Source Files">
+      <UniqueIdentifier>{2452560b-3ebc-4f7b-a472-032fe7149135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\Managers\Header Files">
+      <UniqueIdentifier>{d6149fc2-289a-4cd8-9669-58c6581670f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DynamicSceneManager">
+      <UniqueIdentifier>{cfeccf39-3621-4979-b4bf-f4317bbaf9eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DynamicSceneManager\Source Files">
+      <UniqueIdentifier>{b2bfe8ab-af1a-4b5d-828e-0c47f50bb758}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DynamicSceneManager\Header Files">
+      <UniqueIdentifier>{4c5f6262-3415-46d3-aece-3e2dbfe0711e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{0ad37465-f108-4f94-9099-567d4f4954f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Source Files">
+      <UniqueIdentifier>{f1c0fbe8-34e0-44bc-a05c-c16de9203c63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI\Header Files">
+      <UniqueIdentifier>{1cb17923-fd1f-4ce1-83bb-9018771973e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{ee87b880-a3f0-4048-8dd9-047f31e443ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\Source Files">
+      <UniqueIdentifier>{aa8b7c79-b3fc-40a4-aeb1-6ad358ce4277}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics\Header Files">
+      <UniqueIdentifier>{393fc955-2ae8-49ab-8d22-1e51fba3e422}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_BaseClass.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Cipher.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Convert.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Exception.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Mutex.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Random.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Singleton.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_SmartPointer.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_System.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_SystemInfo.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Thread.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Timer.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Utility.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_UUID.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_VideoMode.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\R_Core_Window.h">
+      <Filter>Core\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_AABBox3D.h">
+      <Filter>Core\_Math\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_MathUtils.h">
+      <Filter>Core\_Math\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_Matrix.h">
+      <Filter>Core\_Math\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_Plane3D.h">
+      <Filter>Core\_Math\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_Quaternion.h">
+      <Filter>Core\_Math\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_Rectangle.h">
+      <Filter>Core\_Math\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_Vector2D.h">
+      <Filter>Core\_Math\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_Vector3D.h">
+      <Filter>Core\_Math\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_Vector4D.h">
+      <Filter>Core\_Math\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_CompressFile.h">
+      <Filter>FileSystem\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_DataFile.h">
+      <Filter>FileSystem\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_FileManager.h">
+      <Filter>FileSystem\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_FileSystemManager.h">
+      <Filter>FileSystem\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_Logger.h">
+      <Filter>FileSystem\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_MemoryFile.h">
+      <Filter>FileSystem\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_PackFile.h">
+      <Filter>FileSystem\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_PhysicalFileANSI.h">
+      <Filter>FileSystem\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_PhysicalFileUNICODE.h">
+      <Filter>FileSystem\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_XMLDocument.h">
+      <Filter>FileSystem\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Script\R_Script_Script.h">
+      <Filter>Script\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Script\R_Script_ScriptManager.h">
+      <Filter>Script\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_AudioManager.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_AudioSound.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_AudioStream.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_EAX2System.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundBuffer.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFile.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundSource.h">
+      <Filter>Audio\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFormat.h">
+      <Filter>Audio\SoundFormats\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFormatOGG.h">
+      <Filter>Audio\SoundFormats\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFormatWAV.h">
+      <Filter>Audio\SoundFormats\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXForceFeedback.h">
+      <Filter>Input\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXJoyStick.h">
+      <Filter>Input\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXKeyboard.h">
+      <Filter>Input\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXMouse.h">
+      <Filter>Input\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_ForceFeedback.h">
+      <Filter>Input\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_ForceFeedbackEffect.h">
+      <Filter>Input\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_InputDevice.h">
+      <Filter>Input\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_InputEventHandler.h">
+      <Filter>Input\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_InputManager.h">
+      <Filter>Input\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_InputSystem.h">
+      <Filter>Input\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_JoyStick.h">
+      <Filter>Input\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_Keyboard.h">
+      <Filter>Input\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Input\R_Input_Mouse.h">
+      <Filter>Input\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\RedeemerEngine.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\RedeemerEngineDefines.h">
+      <Filter>Engine\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_FTPClient.h">
+      <Filter>Network\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_HTTPClient.h">
+      <Filter>Network\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_IPAddress.h">
+      <Filter>Network\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_NetworkManager.h">
+      <Filter>Network\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_Packet.h">
+      <Filter>Network\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_Socket.h">
+      <Filter>Network\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_TCPListener.h">
+      <Filter>Network\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_TCPSocket.h">
+      <Filter>Network\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Network\R_Network_UDPSocket.h">
+      <Filter>Network\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9IndexBuffer.h">
+      <Filter>Render\DirectX9Renderer\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9Material.h">
+      <Filter>Render\DirectX9Renderer\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9RenderDevice.h">
+      <Filter>Render\DirectX9Renderer\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9RenderDeviceFactory.h">
+      <Filter>Render\DirectX9Renderer\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9Shader.h">
+      <Filter>Render\DirectX9Renderer\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9Texture.h">
+      <Filter>Render\DirectX9Renderer\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9TextureSampler.h">
+      <Filter>Render\DirectX9Renderer\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9VertexBuffer.h">
+      <Filter>Render\DirectX9Renderer\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9VertexFormat.h">
+      <Filter>Render\DirectX9Renderer\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_GeometryStage.h">
+      <Filter>Render\RenderPipeline\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_GUIStage.h">
+      <Filter>Render\RenderPipeline\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_LightStage.h">
+      <Filter>Render\RenderPipeline\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_PostProcessStage.h">
+      <Filter>Render\RenderPipeline\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderPipeline.h">
+      <Filter>Render\RenderPipeline\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderStage.h">
+      <Filter>Render\RenderPipeline\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_Color.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_IndexBuffer.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_Material.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderDevice.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderDeviceFactory.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderEntity.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderManager.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderPass.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderQueue.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderTechnique.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_Shader.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_ShaderEntity.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_ShaderVariable.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_Sprite.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_Texture.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_TextureSampler.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_VertexBuffer.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_VertexFormat.h">
+      <Filter>Render\RenderDevice\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_MaterialLibrary.h">
+      <Filter>Render\Managers\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_MaterialManager.h">
+      <Filter>Render\Managers\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_ShaderManager.h">
+      <Filter>Render\Managers\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_TextureManager.h">
+      <Filter>Render\Managers\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Render\R_Render_VertexBufferManager.h">
+      <Filter>Render\Managers\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_BoxSceneNode.h">
+      <Filter>DynamicSceneManager\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_Camera3DSceneNode.h">
+      <Filter>DynamicSceneManager\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_CameraSceneNode.h">
+      <Filter>DynamicSceneManager\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_Frustum.h">
+      <Filter>DynamicSceneManager\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_LightSceneNode.h">
+      <Filter>DynamicSceneManager\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_PlaneSceneNode.h">
+      <Filter>DynamicSceneManager\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SceneManager.h">
+      <Filter>DynamicSceneManager\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SceneNode.h">
+      <Filter>DynamicSceneManager\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SceneNodeEntity.h">
+      <Filter>DynamicSceneManager\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SkyBoxSceneNode.h">
+      <Filter>DynamicSceneManager\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SkySceneNode.h">
+      <Filter>DynamicSceneManager\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\DSM\R_DSM_WorldSceneManager.h">
+      <Filter>DynamicSceneManager\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIButton.h">
+      <Filter>GUI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUICheckBox.h">
+      <Filter>GUI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIControl.h">
+      <Filter>GUI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIEventHandler.h">
+      <Filter>GUI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIFont.h">
+      <Filter>GUI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIFontManager.h">
+      <Filter>GUI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIImage.h">
+      <Filter>GUI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIManager.h">
+      <Filter>GUI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIPanel.h">
+      <Filter>GUI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUISkin.h">
+      <Filter>GUI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUISkinManager.h">
+      <Filter>GUI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIStaticText.h">
+      <Filter>GUI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUISystem.h">
+      <Filter>GUI\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\SourceCode\Redeemer\Physics\R_Physics_WorldSceneManager.h">
+      <Filter>Physics\Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_BaseClass.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Cipher.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Convert.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Exception.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Mutex.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Singleton.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_System.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_SystemInfo.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Thread.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Timer.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Utility.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_UUID.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_VideoMode.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\R_Core_Window.cpp">
+      <Filter>Core\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Core\Math\R_Core_MathUtils.cpp">
+      <Filter>Core\_Math\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_CompressFile.cpp">
+      <Filter>FileSystem\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_DataFile.cpp">
+      <Filter>FileSystem\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_FileManager.cpp">
+      <Filter>FileSystem\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_FileSystemManager.cpp">
+      <Filter>FileSystem\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_Logger.cpp">
+      <Filter>FileSystem\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_MemoryFile.cpp">
+      <Filter>FileSystem\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_PackFile.cpp">
+      <Filter>FileSystem\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_PhysicalFileANSI.cpp">
+      <Filter>FileSystem\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_PhysicalFileUNICODE.cpp">
+      <Filter>FileSystem\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\FileSystem\R_FileSystem_XMLDocument.cpp">
+      <Filter>FileSystem\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Script\R_Script_Script.cpp">
+      <Filter>Script\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Script\R_Script_ScriptManager.cpp">
+      <Filter>Script\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_AudioManager.cpp">
+      <Filter>Audio\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_AudioSound.cpp">
+      <Filter>Audio\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_AudioStream.cpp">
+      <Filter>Audio\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_EAX2System.cpp">
+      <Filter>Audio\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundBuffer.cpp">
+      <Filter>Audio\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFile.cpp">
+      <Filter>Audio\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundSource.cpp">
+      <Filter>Audio\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFormat.cpp">
+      <Filter>Audio\SoundFormats\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFormatOGG.cpp">
+      <Filter>Audio\SoundFormats\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Audio\R_Audio_SoundFormatWAV.cpp">
+      <Filter>Audio\SoundFormats\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXForceFeedback.cpp">
+      <Filter>Input\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXJoyStick.cpp">
+      <Filter>Input\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXKeyboard.cpp">
+      <Filter>Input\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_DirectXMouse.cpp">
+      <Filter>Input\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_ForceFeedback.cpp">
+      <Filter>Input\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_ForceFeedbackEffect.cpp">
+      <Filter>Input\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_InputDevice.cpp">
+      <Filter>Input\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_InputManager.cpp">
+      <Filter>Input\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_InputSystem.cpp">
+      <Filter>Input\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_JoyStick.cpp">
+      <Filter>Input\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_Keyboard.cpp">
+      <Filter>Input\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Input\R_Input_Mouse.cpp">
+      <Filter>Input\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\RedeemerEngine.cpp">
+      <Filter>Engine\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_FTPClient.cpp">
+      <Filter>Network\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_HTTPClient.cpp">
+      <Filter>Network\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_IPAddress.cpp">
+      <Filter>Network\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_NetworkManager.cpp">
+      <Filter>Network\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_Packet.cpp">
+      <Filter>Network\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_Socket.cpp">
+      <Filter>Network\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_TCPListener.cpp">
+      <Filter>Network\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_TCPSocket.cpp">
+      <Filter>Network\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Network\R_Network_UDPSocket.cpp">
+      <Filter>Network\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9IndexBuffer.cpp">
+      <Filter>Render\DirectX9Renderer\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9Material.cpp">
+      <Filter>Render\DirectX9Renderer\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9RenderDevice.cpp">
+      <Filter>Render\DirectX9Renderer\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9RenderDeviceFactory.cpp">
+      <Filter>Render\DirectX9Renderer\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9Shader.cpp">
+      <Filter>Render\DirectX9Renderer\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9Texture.cpp">
+      <Filter>Render\DirectX9Renderer\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9TextureSampler.cpp">
+      <Filter>Render\DirectX9Renderer\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9VertexBuffer.cpp">
+      <Filter>Render\DirectX9Renderer\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\DirectX9\R_Render_DirectX9VertexFormat.cpp">
+      <Filter>Render\DirectX9Renderer\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_GeometryStage.cpp">
+      <Filter>Render\RenderPipeline\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_GUIStage.cpp">
+      <Filter>Render\RenderPipeline\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_LightStage.cpp">
+      <Filter>Render\RenderPipeline\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_PostProcessStage.cpp">
+      <Filter>Render\RenderPipeline\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderPipeline.cpp">
+      <Filter>Render\RenderPipeline\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderStage.cpp">
+      <Filter>Render\RenderPipeline\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_Color.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_IndexBuffer.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_Material.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderDevice.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderDeviceFactory.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderEntity.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderManager.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderPass.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderQueue.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_RenderTechnique.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_Shader.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_ShaderEntity.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_ShaderVariable.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_Sprite.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_Texture.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_TextureSampler.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_VertexBuffer.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_VertexFormat.cpp">
+      <Filter>Render\RenderDevice\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_MaterialLibrary.cpp">
+      <Filter>Render\Managers\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_MaterialManager.cpp">
+      <Filter>Render\Managers\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_ShaderManager.cpp">
+      <Filter>Render\Managers\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_TextureManager.cpp">
+      <Filter>Render\Managers\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Render\R_Render_VertexBufferManager.cpp">
+      <Filter>Render\Managers\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_BoxSceneNode.cpp">
+      <Filter>DynamicSceneManager\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_Camera3DSceneNode.cpp">
+      <Filter>DynamicSceneManager\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_CameraSceneNode.cpp">
+      <Filter>DynamicSceneManager\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_Frustum.cpp">
+      <Filter>DynamicSceneManager\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_LightSceneNode.cpp">
+      <Filter>DynamicSceneManager\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_PlaneSceneNode.cpp">
+      <Filter>DynamicSceneManager\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SceneManager.cpp">
+      <Filter>DynamicSceneManager\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SceneNode.cpp">
+      <Filter>DynamicSceneManager\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SceneNodeEntity.cpp">
+      <Filter>DynamicSceneManager\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SkyBoxSceneNode.cpp">
+      <Filter>DynamicSceneManager\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_SkySceneNode.cpp">
+      <Filter>DynamicSceneManager\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\DSM\R_DSM_WorldSceneManager.cpp">
+      <Filter>DynamicSceneManager\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIButton.cpp">
+      <Filter>GUI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUICheckBox.cpp">
+      <Filter>GUI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIControl.cpp">
+      <Filter>GUI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIEventHandler.cpp">
+      <Filter>GUI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIFont.cpp">
+      <Filter>GUI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIFontManager.cpp">
+      <Filter>GUI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIImage.cpp">
+      <Filter>GUI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIManager.cpp">
+      <Filter>GUI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIPanel.cpp">
+      <Filter>GUI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUISkin.cpp">
+      <Filter>GUI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUISkinManager.cpp">
+      <Filter>GUI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUIStaticText.cpp">
+      <Filter>GUI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\GUI\R_GUI_GUISystem.cpp">
+      <Filter>GUI\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\SourceCode\Redeemer\Physics\R_Physics_WorldSceneManager.cpp">
+      <Filter>Physics\Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4F25DD39-3097-4E76-85EC-D061791FE589}</ProjectGuid>
+    <RootNamespace>AngelScript_Library</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\Binaries\RedeemerEngine\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Out\ExternalDependencies\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\Binaries\RedeemerEngine\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Out\ExternalDependencies\$(ProjectName)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_arrayobject.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_atomic.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_builder.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_bytecode.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_callfunc.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_callfunc_x86.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_compiler.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_configgroup.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_context.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_datatype.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_gc.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_generic.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_globalproperty.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_memory.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_module.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_objecttype.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_outputbuffer.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_parser.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_restore.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptcode.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptengine.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptfunction.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptnode.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptobject.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_string.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_string_util.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_thread.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_tokenizer.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_typeinfo.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_variablescope.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\contextmgr\contextmgr.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptany\scriptany.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptarray\scriptarray.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptbuilder\scriptbuilder.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptdictionary\scriptdictionary.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptfile\scriptfile.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scripthelper\scripthelper.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptmath\scriptmath.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptmath3d\scriptmath3d.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptstdstring\scriptstdstring.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptstring\scriptstring.cpp" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptstring\scriptstring_utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\include\angelscript.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_array.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_arrayobject.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_atomic.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_builder.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_bytecode.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_callfunc.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_compiler.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_config.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_configgroup.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_context.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_criticalsection.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_datatype.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_debug.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_gc.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_generic.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_map.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_memory.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_module.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_objecttype.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_outputbuffer.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_parser.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_property.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_restore.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptcode.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptengine.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptfunction.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptnode.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_scriptobject.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_string.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_string_util.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_texts.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_thread.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_tokendef.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_tokenizer.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_typeinfo.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\angelscript\source\as_variablescope.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\contextmgr\contextmgr.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptany\scriptany.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptarray\scriptarray.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptbuilder\scriptbuilder.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptdictionary\scriptdictionary.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptfile\scriptfile.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scripthelper\scripthelper.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptmath\scriptmath.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptmath3d\scriptmath3d.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptstdstring\scriptstdstring.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\AngelScript_Library\add_on\scriptstring\scriptstring.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

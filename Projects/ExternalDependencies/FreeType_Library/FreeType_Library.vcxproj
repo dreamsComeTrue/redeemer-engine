@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FCC52830-DF8D-4132-88E8-86D5D56B605B}</ProjectGuid>
+    <RootNamespace>FreeType_Library</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)..\Binaries\RedeemerEngine\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">..\..\Out\ExternalDependencies\$(ProjectName)\$(Configuration)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)..\Binaries\RedeemerEngine\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">..\..\Out\ExternalDependencies\$(ProjectName)\$(Configuration)\</IntDir>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;WIN32;_LIB;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;FT2_BUILD_LIBRARY;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_LIB;FT2_BUILD_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\SourceCode\ExternalDependencies\FreeType_Library\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Lib>
+      <OutputFile>$(OutDir)$(ProjectName)_$(Configuration).lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\autofit\autofit.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\bdf\bdf.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\cff\cff.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\base\ftbase.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\base\ftbitmap.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\cache\ftcache.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\base\ftdebug.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\base\ftgasp.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\base\ftglyph.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\gzip\ftgzip.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\base\ftinit.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\lzw\ftlzw.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\base\ftstroke.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\base\ftsystem.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\smooth\smooth.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\base\ftbbox.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\base\ftmm.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\base\ftpfr.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\base\fttype1.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\pcf\pcf.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\pfr\pfr.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\psaux\psaux.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\pshinter\pshinter.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\psnames\psmodule.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\raster\raster.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\sfnt\sfnt.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\truetype\truetype.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\type1\type1.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\cid\type1cid.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\type42\type42.c" />
+    <ClCompile Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\src\winfonts\winfnt.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\include\ft2build.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\include\freetype\config\ftconfig.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\include\freetype\config\ftheader.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\include\freetype\config\ftmodule.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\include\freetype\config\ftoption.h" />
+    <ClInclude Include="..\..\..\SourceCode\ExternalDependencies\FreeType_Library\include\freetype\config\ftstdlib.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

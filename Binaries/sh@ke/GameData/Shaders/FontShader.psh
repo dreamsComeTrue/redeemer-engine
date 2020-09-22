@@ -1,0 +1,47 @@
+/*	Font Shader
+**	
+**	Redeemer Engine 2010 (C) Copyright by Dominik "squ@ll" Jasiñski.
+*/
+
+//------------------------------------------------------------------------------------------------------------------------
+
+sampler fontTexture : register(s0);
+
+//	For get an effect of transparency, by eliminating matching pixels
+float4 BackGroundColor;
+
+//------------------------------------------------------------------------------------------------------------------------
+
+struct VS_OUTPUT
+{
+	float4 Position : POSITION;	
+	float4 Color    : COLOR0;
+	float2 TexCoord : TEXCOORD0;
+};
+
+//------------------------------------------------------------------------------------------------------------------------
+
+struct PS_OUTPUT
+{
+	float4 Color : COLOR;
+};
+
+//------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------
+
+PS_OUTPUT ps_main (VS_OUTPUT IN)
+{
+	PS_OUTPUT OUT;
+
+	float4 outputColor = tex2D (fontTexture, IN.TexCoord).a * IN.Color;
+	
+	if ((outputColor.r <= BackGroundColor.r) && (outputColor.g <= BackGroundColor.g) && 
+		(outputColor.b <= BackGroundColor.b))
+	{
+		discard;
+	}
+
+	OUT.Color = outputColor;
+
+	return OUT;
+}

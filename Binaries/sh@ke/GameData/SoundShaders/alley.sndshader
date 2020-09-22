@@ -1,0 +1,22 @@
+# Name: Alley listener shader.
+# By: Lukas Heise
+# Date: 2006-06-01
+
+
+listener_environment
+{
+	environment = "ALLEY"
+	environment_size = "7.5"
+	environment_diffusion = "0.3"
+	room = "-1000"
+	room_hf = "-270"
+	room_rolloff_factor = "0.0"
+	air_absorption_hf = "-5.0"
+	reflections = "-1204"
+	reflections_delay = "0.007"
+	reverb = "-4"
+	reverb_delay = "0.011"
+	decay_time = "1.49"
+	decay_hf_ratio = "0.86"
+	flags = "DECAYTIMESCALE REFLECTIONSSCALE REFLECTIONSDELAYSCALE REVERBSCALE REVERBDELAYSCALE DECAYHFLIMIT"
+}
